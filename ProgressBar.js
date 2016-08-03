@@ -26,9 +26,9 @@ function state(){
 	progress.style.width=total+"px";
 }
 
-function forwarding(posicion){
+function forwarding(position){
 	if((myVideo.paused==false)&&(myVideo.ended==false)){
-		var ratonX=posicion.pageX-bar.offsetLeft;
+		var ratonX=position.pageX-bar.offsetLeft;
 		var nuevoTiempo=(ratonX*myVideo.duration)/max;
 		myVideo.currentTime=nuevoTiempo;
 		progress.style.width=ratonX+"px";
