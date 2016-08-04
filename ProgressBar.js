@@ -29,7 +29,7 @@ function state(){
 function forwarding(position){
 	if((myVideo.paused==false)&&(myVideo.ended==false)){
 		var mouseX=position.pageX-bar.offsetLeft;
-		var newTime=(ratonX*myVideo.duration)/max;
+		var newTime=(mouseX*myVideo.duration)/max;
 		myVideo.currentTime=newTime;
 		progress.style.width=mouseX+"px";
 	}
